@@ -1,5 +1,4 @@
 .container-big-card {
-  border: 2px solid white;
   width: 400px;
   height: 600px;
   display: flex;
@@ -8,8 +7,15 @@
   margin: 25px 20px 0 20px;
 }
 
-.big-card-title > h2 {
+.big-card-photo > img {
+  width: 100%;
+  min-width: 400px;
+}
+
+.big-card-title > a {
+  font-size: 1.5rem;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 .big-card-description > p {
