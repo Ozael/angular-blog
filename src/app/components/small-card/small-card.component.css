@@ -18,3 +18,7 @@ hr {
   margin-top: 5px;
   border-color: rgba(32, 32, 32, 0.3);
 }
+
+p {
+  color: grey;
+}

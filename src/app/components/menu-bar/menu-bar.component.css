@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-menu-bar {
+  margin: 20px 20px 20px 5px;
+}
+
+.container-menu-bar > ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
