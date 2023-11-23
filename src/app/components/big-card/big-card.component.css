@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin: 25px 20px 0 20px;
+  margin: 0 20px 0 20px;
 }
 
 .big-card-photo > img {
