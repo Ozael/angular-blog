@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+}
+
+.container-content > a {
+  margin-top: 30px;
+}
+
+.photo > img {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: inset 0 -3em 3em rgba(208, 209, 208, 0.3), 0 0 0 2px white,
+    0.3em 0.3em 1em rgba(185, 185, 185, 0.6);
+}
+
+.description > p {
+  margin-top: 20px;
+}
