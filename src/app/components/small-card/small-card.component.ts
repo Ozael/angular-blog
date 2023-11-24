@@ -7,6 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SmallCardComponent implements OnInit {
   @Input()
+  Id = '1';
+
+  @Input()
   photoCover = '';
 
   @Input()
@@ -19,7 +22,7 @@ export class SmallCardComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.description.length > 200) {
-      this.description = `${this.description.substring(0, 200)}...`;
+      this.description = `${this.description.substring(0, 100)}...`;
     }
   }
 }

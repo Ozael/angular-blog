@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import '../../data/data';
 import { data } from '../../data/data';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
@@ -10,13 +11,10 @@ export class ContentComponent implements OnInit {
   photoCover = '';
   title = '';
   description = '';
-  id = 1;
 
-  constructor() {
-    this.photoCover = data[this.id].photo;
-    this.title = data[this.id].title;
-    this.description = data[this.id].description;
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => console.log(value.get('id')));
   }
-
-  ngOnInit(): void {}
 }

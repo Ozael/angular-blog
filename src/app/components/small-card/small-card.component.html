@@ -1,7 +1,9 @@
 <div class="container-small-card">
   <img [src]="photoCover" [alt]="title" />
   <div class="text-news">
-    <h3>{{ title }}</h3>
+    <h3>
+      <a [routerLink]="['content', Id]">{{ title }}</a>
+    </h3>
     <p>{{ description }}</p>
     <hr />
   </div>
