@@ -12,9 +12,22 @@ export class ContentComponent implements OnInit {
   title = '';
   description = '';
 
+  private id: string | null = '0';
+
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((value) => console.log(value.get('id')));
+    this.route.paramMap.subscribe((value) => {
+      this.id = value.get('id');
+    });
+    this.setValuesComponent(this.id);
+  }
+
+  setValuesComponent(id: string | null) {
+    const result = data.filter((article) => article.id == id)[0];
+    this.title = result.title;
+    this.description = result.description;
+    this.photoCover = result.photo;
+    console.log(result);
   }
 }
